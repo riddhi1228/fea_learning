@@ -18,11 +18,17 @@ in preparation for GSoC 2026 with the SU2 multiphysics simulation suite.
   DILATE+ERODE filter kernels, 50% volume fraction target)
 - Asked questions on SU2 GitHub regarding topology optimization
 
+## What I accomplished (March 8, 2026)
+- Built SU2 v8.4.0 with full adjoint/AD support (reverse + forward)
+- Ran primal FEA solver + both adjoint solvers (compliance + volume fraction)
+- Wrote custom topology optimization driver in Python (Optimality Criteria method)
+- Achieved 93% binary topology with volume constraint satisfied at exactly 0.5
+- Visualized density field using pvpython headless rendering
+
 ## Current focus
-- Running topology optimization simulation (fea_topology test case)
-- Understanding SIMP penalization and density filtering in SU2
-- Studying CFEASolver.cpp internals
-- Drafting GSoC 2026 proposal for SU2
+- Running FADO optimization framework (pcarruscag's examples)
+- Drafting GSoC 2026 proposal
+- Improving convergence of custom OC optimizer
 
 ## GSoC 2026 Interest Area
 Topology optimization and FEA solver improvements in SU2.
