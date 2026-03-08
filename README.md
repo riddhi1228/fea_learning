@@ -33,3 +33,8 @@ for the topology optimization module.
 ## Notes
 This repo is updated regularly as I progress.
 Results and screenshots will be added as simulations complete.
+
+## Results
+### Topology Optimization — Cantilever Beam
+![Topology Result](results/topology_optimization/topology_result.png)
+*Cantilever beam, 50% volume fraction, SIMP p=3, SU2 v8.4.0*
