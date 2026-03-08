@@ -1,25 +1,35 @@
-# FEA Learning Notes and Experiments
+# FEA & Topology Optimization — GSoC 2026 Preparation
 
-This repository documents my learning journey in finite element analysis (FEA)
-and computational mechanics.
+Learning journal documenting my work with SU2 and computational mechanics,
+in preparation for GSoC 2026 with the SU2 multiphysics simulation suite.
 
-## Tools and Software
-- SU2 (FEA module)
-- ParaView
-- Linux (Ubuntu)
-- MPI (basic usage)
+## Environment
+- SU2 v8.4.0 (built from source using meson + ninja)
+- ParaView 5.13.1
+- OpenFOAM
+- Ubuntu 22.04 (WSL2)
 
-## What I have done so far
-- Ran linear elasticity simulations using SU2
-- Worked with boundary conditions (clamped, load, free)
-- Generated and visualized stress and displacement fields in ParaView
-- Explored SU2 configuration files for structural problems
+## What I have done
+- Built SU2 v8.4.0 from source (meson + ninja)
+- Ran linear elasticity simulations (clamped beam, displacement + stress fields)
+- Visualized results in ParaView (stress, displacement fields)
+- Studied SU2 `.cfg` configuration files for structural problems
+- Studied the fea_topology test case (cantilever beam, SIMP method,
+  DILATE+ERODE filter kernels, 50% volume fraction target)
+- Asked questions on SU2 GitHub regarding topology optimization
 
 ## Current focus
-- Understanding FEA formulation and solver setup
-- Studying topology optimization concepts
-- Preparing for open-source contributions (GSoC)
+- Running topology optimization simulation (fea_topology test case)
+- Understanding SIMP penalization and density filtering in SU2
+- Studying CFEASolver.cpp internals
+- Drafting GSoC 2026 proposal for SU2
+
+## GSoC 2026 Interest Area
+Topology optimization and FEA solver improvements in SU2.
+Specifically interested in improved Python interface support
+for the structural solver and better tutorial documentation
+for the topology optimization module.
 
 ## Notes
-This repository is intended as a public learning log and will be updated
-regularly as I progress.
+This repo is updated regularly as I progress.
+Results and screenshots will be added as simulations complete.
